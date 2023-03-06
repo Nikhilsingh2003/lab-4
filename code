@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("*******Menu*******");
+		System.out.println("1.Add an Employee: ");
+		System.out.println("2.Display all Employees: ");
+		System.out.println("3.Write All Employees To File: ");
+		System.out.println("4.Read All Employees From File: ");
+		System.out.println("5.Display with EID: ");
+		System.out.println("6.Exit");
+		Scanner sc=new Scanner(System.in);
+		System.out.println("");
+		System.out.print("Enter Your Choice(1-6): ");
+		int option=sc.nextInt();
+		switch(option)
+		{
+		    case 1:
+		        System.out.print("Enter Employee ID: ");
+		        int eid=sc.nextInt();
+		        System.out.print("Enter Employee Name: ");
+		        String name=sc.next();
+		        System.out.print("Enter Employee Designation: ");
+		        String desg=sc.next();
+		        System.out.print("Enter Employee Age: ");
+		        int age=sc.nextInt();
+		        System.out.print("Enter Employee Salary: ");
+		        int sal=sc.nextInt();
+		        System.out.print("");
+		        System.out.println("Employee Details Added Successfully!");
+		        System.out.println("");
+		        System.out.println("******Employee Details******");
+		        System.out.println("Employee ID: "+eid);
+		        System.out.println("Employee Name: "+name);
+		        System.out.println("Employee Designation: "+desg);
+		        System.out.println("Employee Age: "+age);
+		        System.out.println("Employee Salary: "+sal);
+		        break;
+		        
+		}
+		
+	}
+}
